@@ -11,6 +11,7 @@ var to = parseInt(prompt("Enter the higher bound."));
 //Limits the number that can be entered into the bounds.1
 while (from < 0){
     from = parseInt(prompt("Enter a number greater than 0"));
+//continue
 } while (to > 1000){
     to = parseInt(prompt("Enter a number less than 1000"))
 }
@@ -24,6 +25,7 @@ var currentGuess = parseInt(prompt("Guess a number between " + from + " and " + 
 var totalGuesses =1;
 
 //loop until user guesses correct number
+//loop until user stops trolling
 while(currentGuess != target || currentGuess > 1000){
     if (currentGuess < target){
         currentGuess = parseInt(prompt("Enter a higher number that is more than the lower bound"));
